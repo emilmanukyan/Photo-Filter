@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="https://picturepan2.github.io/instagram.css/dist/instagram.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://github.com/tsayen/dom-to-image.git">
+    <link rel="icon" href="img/photo.png" type="image/x-icon" sizes="16x16">
+    <title>Ֆիլտրիր նկարդ ճաշակովդ</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JS/app.js"></script>
+</head>
+<body>
+      <h4 id="qayl-1">1. սեղմելով "ընտրել նկարը" կոճակը ՝ ընտրեք նկարը:</h4>
+      <h4 id="qayl-2">2. Այնուհետև ֆիլտրերի համար նախատեսված համապատասխան կոճակներին սեղմելով, ավելացնել ֆիլտրը:</h4>
+      <h4 id="qayl-3">3. Այդ ամենը կատարելուց հետո, "Ներբեռնել" կոճակին սեղմելով ներբեռնել ձևափոխված նկարը:</h4>
+  <h1 id="By">😎😉Խմբագիր՝Էմիլ😉😎</h1>
+  <h1 class="vernagir">👇😎Ստեղծիր նկարդ Ճաշակովդ😎👇</h1>
+  <p id="entavernagir">👇Ֆիլտրիր նկարդ և ներբեռնիր այն👇</p>
+  <input type="file" class="input-file" accept="image/*" onchange="uploadPhoto(this)">
+  <br>
+  <br>
+  <div id="photo-editor">
+    <img id="photo-img" height="auto" width="400">
+  </div>
+  <div id="xumb">
+    <div class="logo">
+      <img src="img/photo.png" height="auto" width="400">
+    </div>
+
+    <button type="button" class="normal-button" onclick="applyEffect('')">Normal😉</button>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-1977')">1. 1977</button>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-aden')">2. Aden</button>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-amaro')">3. Amaro</button>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-ashby')">4. Ashby</button>
+    <br>
+    <br>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-brannan')">5. Brannan</button>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-brooklyn')">6. Brooklyn</button>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-charmes')">7. Charmes</button>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-clarendon')">8. Clarendon</button>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-crema')">9. Crema</button>
+    <br>
+    <br>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-dogpatch')">10. Dogpatch</button>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-earlybird')">11. Earlybird</button>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-gingham')">12. Gingham</button>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-hefe')">13. Hefe</button>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-helena')">14. Helena</button>
+    <br>
+    <br>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-kelvin')">15. Kelvin</button>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-juno')">16. Juno</button>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-lofi')">17. Lo-Fi</button>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-maven')">18. Maven</button>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-moon')">19. Moon</button>
+    <br>
+    <br>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-nashville')">20. Nashville</button>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-poprocket')">21. Poprocket</button>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-sierra')">22. Sierra</button>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-sutro')">23. Sutro</button>
+
+    <button type="button" class="effect-button" onclick="applyEffect('filter-xpro-ii')">24. X-pro-II</button>
+
+    <br>
+    <br>
+    <br>
+    <div id="download-button">
+      <button type="button" class="download-button" onclick="downloadPhoto()">😄Ն Ե Ր Բ Ե Ռ Ն Ե Լ😄</button>
+    </div>
+   <br>
+   <br>
+    </script>
+    <script src='https://cdn.jsdelivr.net/npm/dom-to-image/src/dom-to-image.min.js'></script>
+</div>  
+      <div class="footer">
+        <ul class="icons">
+          <li>
+            <a href="https://www.facebook.com/picsart">
+              <img class="icons__image" src="img/facebook.svg">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/picsart/?hl=ru">
+              <img  class="icons__image" src="img/instagram.svg">
+          </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/user/PicsArtPhotoStudio">
+              <img class="icons__image" src="img/youtube.svg">
+            </a>
+          </li>
+          </ul>
+        </ul>
+        <span class="copy">&copy; Designed by Emil</span>
+      </div>
+
+</body>
+</html>

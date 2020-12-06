@@ -1,0 +1,255 @@
+.effect-button {
+    padding: 10px;
+    margin-right: 60px;
+    height: 60px;
+    width: 120px;
+  }
+  
+  .effect-button {
+    background-color: #4361ee;
+    border: 2px solid #5a189a;
+    border-radius: 25px;
+  }
+
+  .vernagir {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #ef233c 25%, #023e8a 59%, #e85d04);
+    display: table;
+    margin: 20px auto;
+    color: white;
+    border-radius: 5px;
+    mix-blend-mode: multiply;
+    padding: 5px 10px;
+  }
+  #entavernagir {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    background: linear-gradient(135deg, #023e8a 20%, #e63946 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0.3em 0.6em;
+    border: 3px solid transparent;
+    border-image: linear-gradient(135deg, #023e8a 20%, #e63946 70%);
+    border-image-slice: 1;
+  }
+  
+  .effect-button:hover::before {
+    border-color: black;
+  }
+  
+  body {
+    background: hsla(0, 32%, 59%, 1);
+  
+    background: linear-gradient(
+      0deg,
+      hsla(0, 32%, 59%, 1) 0%,
+      hsla(29, 30%, 58%, 1) 48%,
+      hsla(301, 68%, 84%, 1) 100%
+    );
+  
+    background: -moz-linear-gradient(
+      0deg,
+      hsla(0, 32%, 59%, 1) 0%,
+      hsla(29, 30%, 58%, 1) 48%,
+      hsla(301, 68%, 84%, 1) 100%
+    );
+  
+    background: -webkit-linear-gradient(
+      0deg,
+      hsla(0, 32%, 59%, 1) 0%,
+      hsla(29, 30%, 58%, 1) 48%,
+      hsla(301, 68%, 84%, 1) 100%
+    );
+  
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B97676", endColorstr="#B59475", GradientType=1 );
+  }
+  
+  .input-file {
+    color: transparent;
+  }
+  .input-file::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .input-file::before {
+    font-family: "Arial Black", Gadget, sans-serif;
+    content: "😉Ընտրել Նկարը😉";
+    color: black;
+    display: inline-block;
+    background: #3a86ff;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 10pt;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .input-file:hover::before {
+    border-color: red;
+  }
+  .input-file:active {
+    outline: 0;
+  }
+  .input-file:active::before {
+    background: red;
+  }
+  
+  button,
+  input {
+    outline: none;
+  }
+  
+  .effect-button:hover {
+    background-color: red;
+    transition: 0.5s;
+  }
+  
+  .effect-button:hover {
+    border-color: black;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .effect-button:active {
+    background-color: green;
+  }
+  
+  .effect-button {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  
+  #photo-editor {
+    display: inline-block;
+  }
+  
+  #By {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #ef233c 33%, #023e8a 66%, #e85d04);
+    display: table;
+    margin: 10px auto;
+    color: white;
+    border-radius: 5px;
+    mix-blend-mode: multiply;
+    padding: 5px 10px;
+  }
+  
+  .download-button {
+    background: linear-gradient(45deg, #ef233c 25%, #023e8a 59%, #e85d04);
+    color: Yellow;
+    border: 3px solid #5a189a;
+    border-radius: 25px;
+    height: 100px;
+    width: 180px;
+  }
+  
+  .download-button {
+    font-family: "Arial Black", Gadget, sans-serif;
+  }
+  
+  .download-button:hover::before {
+    border-color: black;
+    transition: 0.5s;
+  }
+  
+  .download-button:active {
+    background-color: green;
+    transition: 0.5s;
+  }
+  
+  .download-button:hover {
+    border-color: black;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .download-button:hover::before {
+    border-color: black;
+    transition: 0.5s;
+  }
+  
+  #download-button {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .normal-button {
+    color: yellow;
+    font-family: "Arial Black", Gadget, sans-serif;
+    padding: 10px;
+    margin-right: 60px;
+    height: 60px;
+    width: 120px;
+    background: linear-gradient(45deg, #ef233c 25%, #023e8a 59%, #e85d04);
+    border: 3px solid #5a189a;
+    border-radius: 25px;
+  }
+  
+  .normal-button:hover::before {
+    border-color: black;
+    transition: 0.5s;
+  }
+  
+  .normal-button:hover {
+    border-color: black;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .normal-button:active {
+    background-color: green;
+  }
+  
+  #qayl-1 {
+    color: #ef233c;
+  }
+  
+  #qayl-2 {
+    color: #023e8a;
+  }
+  
+  #qayl-3 {
+    color: #e85d04;
+  }
+
+  .footer {
+  margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #b61919 25%, #023e8a 59%, #e85d04);
+    padding:15px;
+    align-items: center;
+  }
+  
+  .copy {
+    color: #dfe2ed;
+    position: relative;
+  }
+  
+  .icons  {
+    display: flex;
+    position: relative;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    column-gap:10px;
+  }
+  
+  .icons__image {
+    width: 20px;
+  }
+  .logo {
+    float: right;
+    margin-right: 50px;
+  }
