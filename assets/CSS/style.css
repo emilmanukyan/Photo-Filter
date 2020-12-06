@@ -89,7 +89,7 @@
     cursor: pointer;
     font-weight: 700;
     font-size: 10pt;
-    width: 200px;
+    width: 100%;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -221,6 +221,9 @@
   
   #qayl-3 {
     color: #e85d04;
+  }
+  #xumb {
+    text-align: center;
   }
 
   .footer {
